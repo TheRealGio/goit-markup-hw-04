@@ -122,15 +122,35 @@ a.current-link {
   padding: 32px 0 31px 0;
 }
 
+.svg-nav-styling {
+  margin-right: 10px;
+}
+
 .nav-items:hover,
 .contact-information:hover {
   color: var(--blue);
+  fill: var(--blue);
+}
+
+.main-section-overlay {
+  background-color: rgba(47, 48, 58, 0.4);
+  overflow: hidden;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .main-section {
+  position: relative;
+  width: 100%;
   padding: 200px 0;
   background-color: var(--dark-blue);
   text-align: center; /** Centering The Button not sure if correct **/
+  background: url(../images/Img.png) 0 0 no-repeat;
+  overflow: hidden;
+  z-index: -2;
 }
 
 .main-banner {
