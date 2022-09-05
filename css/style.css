@@ -125,13 +125,15 @@ a.current-link {
 }
 
 .svg-nav-styling {
+  fill: currentColor;
   margin-right: 10px;
 }
 
 .nav-items:hover,
-.contact-information:hover {
+.nav-items:focus,
+.contact-information:hover,
+.contact-information:focus {
   color: var(--blue);
-  fill: var(--blue);
 }
 
 .main-section-overlay {
@@ -176,7 +178,8 @@ a.current-link {
   transition: 200ms;
 }
 
-.main-section button:hover {
+.main-section button:hover,
+.main-section button:focus {
   background-color: var(--button-hover-blue);
 }
 
@@ -197,7 +200,11 @@ a.current-link {
 }
 
 .benefits-icon {
-  padding: 25px 102px;
+  padding: 25px 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--off-white);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -296,9 +303,11 @@ li.member-card:not(:last-child) {
   line-height: 19px;
 }
 
-li.social-media-icon {
-  padding: 12px;
-  fill: var(--social-grey);
+.social-media-links {
+  color: var(--social-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition-duration: 200ms;
   border-radius: 50%;
@@ -306,13 +315,18 @@ li.social-media-icon {
   height: 44px;
 }
 
-li.social-media-icon:hover {
-  fill: white;
+.social-media-links:hover,
+.social-media-links:focus {
+  color: white;
   background-color: var(--blue);
 }
 
 li.social-media-icon:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-media-icon-svg {
+  fill: currentColor;
 }
 
 .social-media-buttons {
@@ -385,6 +399,7 @@ li.regular-customer:not(:last-child) {
 .footer-social-media {
   fill: white;
   background-color: var(--white-10percent);
+  border-radius: 50%;
 }
 .footer-logo {
   margin-bottom: 10px;
@@ -396,7 +411,8 @@ li.regular-customer:not(:last-child) {
   padding: 0;
 }
 
-.address-bar-items > a:hover {
+.address-bar-items > a:hover,
+.address-bar-items > a:focus {
   color: var(--white);
 }
 
@@ -438,7 +454,8 @@ li > .filter-current {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter-menu-buttons:hover {
+.filter-menu-buttons:hover,
+.filter-menu-buttons:focus {
   color: var(--white);
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -457,7 +474,12 @@ li > .filter-current {
   cursor: pointer;
   transition-duration: 500ms;
 }
-.project-card:hover {
+
+.project-card-link {
+  display: block;
+}
+.project-card-link:hover,
+.project-card-link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
 }
