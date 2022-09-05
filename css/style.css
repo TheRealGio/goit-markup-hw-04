@@ -339,7 +339,13 @@ li.social-media-icon:not(:last-child) {
   display: flex;
   justify-content: center;
 }
-
+.regular-customer-container {
+  height: 92px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .regular-customers-header {
   text-align: center;
   font-weight: 700;
@@ -356,7 +362,6 @@ li.social-media-icon:not(:last-child) {
 
 .regular-customer {
   border: 1px solid var(--social-grey);
-  padding: 16px 32px;
   border-radius: 4px;
   color: var(--social-grey);
   fill: var(--social-grey);
