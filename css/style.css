@@ -154,7 +154,7 @@ a.current-link {
   text-align: center; /** Centering The Button not sure if correct **/
   background: url(../images/Img.png) 0 0 no-repeat;
   overflow: hidden;
-  z-index: -2;
+  z-index: 2;
 }
 
 .main-banner {
@@ -316,7 +316,9 @@ li.member-card:not(:last-child) {
 }
 
 .social-media-links:hover,
-.social-media-links:focus {
+.social-media-links:focus,
+.footer-social-media-links:hover,
+.footer-social-media-links:focus {
   color: white;
   background-color: var(--blue);
 }
@@ -401,8 +403,16 @@ li.regular-customer:not(:last-child) {
   background-color: var(--dark-blue);
   padding: 60px 0;
 }
-.footer-social-media {
-  fill: white;
+.footer-social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 200ms;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: white;
   background-color: var(--white-10percent);
   border-radius: 50%;
 }
