@@ -24,16 +24,6 @@
     <link href="css/style.css" rel="stylesheet" />
     <title>WebStudio</title>
   </head>
-  <body>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="close" data-modal-close>
-        <svg width="11" height="11">
-          <use width="11" height="11" href="./images/icons.svg#icon-close"></use>
-        </svg>
-        </div>
-      </div>
-    </div>
   <header class="header-line">
     <div class="header container">
       <nav class="navbar">
@@ -77,7 +67,7 @@
           EFFECTIVE SOLUTIONS FOR<br />
           YOUR BUSINESS
         </h1>
-        <button type="button" id="request-service-button" data-modal-open>
+        <button type="button" id="request-service-button">
           Request our service
         </button>
       </div>
@@ -141,32 +131,29 @@
       <div class="what-we-do container">
         <h2 class="what-we-do-title">What we do</h2>
         <ul class="images-section list">
-          <li class="what-we-do-image-container">
+          <li>
             <img
               src="./images/imglaptop-left.jpg"
               alt="image of someone at a desk typing on their tablet"
               width="370"
               height="294"
             />
-            <div class="what-we-do-overlay-text">DESKTOP APPS</div>
           </li>
-          <li class="what-we-do-image-container">
+          <li>
             <img
               src="./images/imgPhone-middle.jpg"
               alt="image of someone using their phone infront of other screens"
               width="370"
               height="294"
             />
-            <div class="what-we-do-overlay-text">MOBILE APPS</div>            
           </li>
-          <li class="what-we-do-image-container">
+          <li>
             <img
               src="./images/imgtablet-right.jpg"
               alt="image of someone using a tablet to pick colors"
               width="370"
               height="294"
             />
-            <div class="what-we-do-overlay-text">DESIGN SOLUTIONS</div>
           </li>
         </ul>
       </div>
@@ -452,8 +439,6 @@
       </address>
     </div>
   </footer>
-    <script src="./js/modal.js"></script>
-  </body>
 </html>
 
 <!-- Pictures, Display inline and use class in slack, Table fix with flex start w/ container -->
